@@ -1,0 +1,9 @@
+
+<snippet>
+  <content><![CDATA[
+/*global RPM:true, loadFixtures: true, beforeEach: true, it: true, expect: true, describe:true, spyOn: true, JQuery:true, \$:true*/
+/*jslint browser: true, devel: true, bitwise: true, debug: true, nomen: true, sloppy: false, indent: 2*/
+]]></content>
+  <tabTrigger>jasmine-lint</tabTrigger>
+  <scope>source.js</scope>
+</snippet>

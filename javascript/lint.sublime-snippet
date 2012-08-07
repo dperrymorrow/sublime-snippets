@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+/*global RPM:true, JQuery:true, \$:true*/
+/*jslint browser: true, devel: true, bitwise: true, debug: true, nomen: true, sloppy: false, indent: 2*/
+]]></content>
+  <tabTrigger>lint</tabTrigger>
+  <scope>source.js</scope>
+</snippet>

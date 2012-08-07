@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+beforeEach(function () {
+  loadFixtured("${1:your-fixture.html}")
+});
+]]></content>
+  <tabTrigger>jasmine-before</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
