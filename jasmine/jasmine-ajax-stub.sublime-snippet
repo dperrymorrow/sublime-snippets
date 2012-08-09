@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+spyOn(\$, "${1:ajax}").andCallFake(function (params) {
+  params.${2:success}(${3:response});
+});
+]]></content>
+  <tabTrigger>jasmine-ajax-stub</tabTrigger>
+  <scope>source.js</scope>
+</snippet>

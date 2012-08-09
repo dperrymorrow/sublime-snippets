@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+expect(${1:true}).toEqual(${1:true});
+]]></content>
+  <tabTrigger>jasmine-expect</tabTrigger>
+  <scope>source.js</scope>
+</snippet>

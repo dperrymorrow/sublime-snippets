@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+(function () {
+  if (typeof window.${1:NAMESPACE} === 'undefined') { window.${1:NAMESPACE} = {}; }
+  window.${1:NAMESPACE}.${2:moduleName} = {
+
+    initialize: function () {
+    },
+
+  };
+}());
+]]></content>
+  <tabTrigger>module</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
