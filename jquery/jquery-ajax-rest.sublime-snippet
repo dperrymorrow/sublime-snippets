@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+\$.ajax({
+  type: 'POST',
+  url: '${1:http://example.com}',
+  data: {_method: '${2:DELETE}'},
+  success: function (response) {},
+  error: function (response) {}
+});
+]]></content>
+  <tabTrigger><![CDATA[ajax-rest]]></tabTrigger>
+  <scope>source.js</scope>
+</snippet>
