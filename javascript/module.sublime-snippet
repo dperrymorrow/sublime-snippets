@@ -5,7 +5,7 @@
   window.${1:NAMESPACE}.${2:moduleName} = {
 
     initialize: function () {
-    },
+    }
 
   };
 }());

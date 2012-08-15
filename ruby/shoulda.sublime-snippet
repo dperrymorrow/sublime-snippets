@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+should "${1:description}" do
+  ${2:yourtest}
+end
+]]></content>
+  <tabTrigger>should</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

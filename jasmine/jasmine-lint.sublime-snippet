@@ -1,7 +1,7 @@
 
 <snippet>
   <content><![CDATA[
-/*global RPM:true, loadFixtures: true, waits:true, beforeEach: true, it: true, expect: true, describe:true, spyOn: true, white: true, vars: true, JQuery:true, \$:true*/
+/*global RPM:true, loadFixtures: true, waits:true, beforeEach: true, it: true, expect: true, describe:true, spyOn: true, white: true, vars: true, jQuery:true, \$:true*/
 /*jslint browser: true, devel: true, bitwise: true, debug: true, nomen: true, sloppy: false, indent: 2*/
 ]]></content>
   <tabTrigger>jasmine-lint</tabTrigger>

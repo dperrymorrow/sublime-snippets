@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+${1:something} == ${2:true} ? ${3:do_something} : ${4:do_something_else}
+]]></content>
+  <tabTrigger>turner</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>
