@@ -1,0 +1,29 @@
+
+<snippet>
+  <content><![CDATA[
+window.${1:namespace} = window.${1} || {};
+window.${1}.Routers = window.${1}.Routers || {};
+window.${1}.Routers.${2:model}Router = Backbone.Router.extend({
+  _instance: null,
+  ${2}s: {},
+
+  routes: {
+    "${2}/new": "new",
+    "${2}s/index": "index",
+    "${2}/:id/edit": "edit"
+  },
+
+  initialize: function (options) {
+    this.${2}s = new ${1}.Collections.${2}sCollection();
+    this.${2}s.reset([]);
+  },
+
+  getInstance: function () {
+    this._instance = this._instance || new ${1}.Routers.${2}sRouter();
+    return this._instance;
+  }
+});
+]]></content>
+  <tabTrigger>bb-router</tabTrigger>
+  <scope>source.js</scope>
+</snippet>

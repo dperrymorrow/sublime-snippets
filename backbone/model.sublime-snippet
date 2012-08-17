@@ -1,0 +1,28 @@
+
+<snippet>
+  <content><![CDATA[
+window.${1:namespace} = window.${1:namespace} || {};
+window.${1}.Models = window.${1}.Models || {};
+window.${1}.Models.${2:model}Model = Backbone.Model.extend({
+
+  // the root of the post params
+  paramRoot: "${2}",
+
+  // the default fields
+  defaults: {
+    ${3:name}: ""
+  },
+
+  url: function () {
+    return "${4:http://example.com}";
+  },
+
+  // the constructor
+  initialize: function (options) {
+
+  }
+});
+]]></content>
+  <tabTrigger>bb-model</tabTrigger>
+  <scope>source.js</scope>
+</snippet>

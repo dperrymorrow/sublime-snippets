@@ -1,8 +1,10 @@
 <snippet>
   <content><![CDATA[
 (function () {
-  if (typeof window.${1:NAMESPACE} === 'undefined') { window.${1:NAMESPACE} = {}; }
+  "use strict";
+  window.${1:NAMESPACE} = window.${1:NAMESPACE} || {};
   window.${1:NAMESPACE}.${2:moduleName} = {
+    ${3:variable}: "",
 
     initialize: function () {
     }

@@ -1,0 +1,18 @@
+
+<snippet>
+  <content><![CDATA[
+window.${1:namespace} = window.${1} || {};
+window.${1}.Collections = window.${1}.Collections || {};
+window.${1}.Collections.${2:model}Collection = Backbone.Collection.extend({
+
+  // Reference to this collection's model.
+  model: ${1}.Models.${2}Model,
+
+  url: function () {
+    return "${3:example.com}";
+  }
+});
+]]></content>
+  <tabTrigger>bb-collection</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
