@@ -1,37 +1,41 @@
 
 <snippet>
   <content><![CDATA[
-window.${1:namespace} = window.${1} || {};
-window.${1}.Views = window.${1}.Views || {};
-window.${1}.${2:ViewName} = Backbone.View.extend({
-  template: JST["${3:template.haml"],
-  // the wrapper
-  tagName: "div",
-  // functions to fire on events
-  events: {
-    "click a.delete": "destroy"
-  },
+(function () {
+  "use strict";
+  window.${1:namespace} = window.${1} || {};
+  window.${1}.Views = window.${1}.Views || {};
 
-  // the constructor
-  initialize: function (options) {
-    // model is passed through
-  },
+  window.${1}.Views.${2:model}${3:viewName}View = Backbone.View.extend({
+    template: JST["${2}/${3}.haml"],
+    // the wrapper
+    tagName: "div",
+    // functions to fire on events
+    events: {
+      "click a.delete": "destroy"
+    },
 
-  // populate the html to the dom
-  render: function () {
-    $(this.el).html(this.template(this.model.toJSON));
-    return this;
-  },
+    // the constructor
+    initialize: function (options) {
+      // model is passed through
+    },
 
-  // delete the model
-  destroy: function (event) {
-    event.preventDefault();
-    event.stopPropagation();
+    // populate the html to the dom
+    render: function () {
+      \$(this.el).html(this.template(this.model.toJSON));
+      return this;
+    },
 
-    this.model.destroy();
-    this.remove();
-  }
-});
+    // delete the model
+    destroy: function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      this.model.destroy();
+      this.remove();
+    }
+  });
+}());
 ]]></content>
   <tabTrigger>bb-view</tabTrigger>
   <scope>source.js</scope>

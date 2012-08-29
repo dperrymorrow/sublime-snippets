@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+window.${1:namespace} = typeof window.${1} !== 'undefined' ? window.${1} : {};
+window.${1}.${2:ClassName} = (function () {
+  "use strict";
+
+  ${2}.${3:staticVariable} = "foo";
+  var ${4:instanceVariable} = "foo";
+
+  function ${2}() {
+    alert('hello im a ${2}');
+  }
+
+  ${2}.prototype.exampleFunction = function(parens) {
+    alert('i am a function');
+  };
+
+  return ${2};
+})();
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>class</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>

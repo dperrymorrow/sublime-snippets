@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+(function(\$) {
+
+})(jQuery);
+]]></content>
+  <tabTrigger><![CDATA[jquery-wrap]]></tabTrigger>
+  <scope>source.js</scope>
+</snippet>
+
+

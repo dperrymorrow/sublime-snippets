@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+\$(function(){
+  ${1:$SELECTEDTEXT}
+});
+]]></content>
+  <tabTrigger><![CDATA[jquery-wrap]]></tabTrigger>
+  <scope>source.js</scope>
+</snippet>
