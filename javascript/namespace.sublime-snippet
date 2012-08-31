@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-${1:window}.${2:namespace} = typeof ${1}.${2} !== 'undefined' ? ${1}.${2} : {};
+window.${1:namespace} = window.${1} || {};
 ]]></content>
   <tabTrigger>namespace</tabTrigger>
   <scope>source.js</scope>

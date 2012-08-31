@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-window.${1:namespace} = typeof window.${1} !== 'undefined' ? window.${1} : {};
+window.${1:namespace} = window.${1} || {};
 window.${1}.${2:ClassName} = (function () {
   "use strict";
 
