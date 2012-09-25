@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-/*global RPM:true, jQuery:true, Backbone: true, JST: true, \$:true*/
-/*jslint browser: true, white: true, vars: true, devel: true, bitwise: true, debug: true, nomen: true, sloppy: false, indent: 2*/
+/*global RPM:true, _:true, jQuery:true, Backbone:true, JST:true, \$:true*/
+/*jslint browser: true, white: false, vars: true, devel: true, bitwise: true, debug: true, nomen: true, sloppy: false, indent: 2*/
 ]]></content>
   <tabTrigger>lint</tabTrigger>
   <scope>source.js</scope>
